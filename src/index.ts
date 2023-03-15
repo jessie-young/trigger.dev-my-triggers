@@ -9,7 +9,7 @@ new Trigger({
   name: "Scheduled Healthcheck",
   // Trigger every 5 minutes, see https://docs.trigger.dev/triggers/scheduled
   on: scheduleEvent({
-    rateOf: { minutes: 5 },
+    rateOf: { minutes: 1 },
   }),
   // The run functions gets called every 5 minutes
   async run(event, ctx) {
